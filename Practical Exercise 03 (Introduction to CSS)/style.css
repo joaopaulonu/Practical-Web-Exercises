@@ -1,0 +1,124 @@
+/* Definição de Cores com Variáveis (Custom Properties) */
+:root {
+    /* Teste Rápido 2: Trocar a --cor-primaria por 'green' para o teste */
+    --cor-primaria: #007bff; /* Azul (HEX) */
+    --cor-secundaria: rgb(52, 58, 64); /* Cinza Escuro (RGB) */
+    --cor-fundo: hsl(220, 14%, 95%); /* Cinza Claro (HSL) */
+    --cor-sucesso: rgba(40, 167, 69, 0.9); /* Verde com Transparência (RGBA) */
+}
+
+/* 1. Reset Básico e Fundo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Configuração de Fonte (Google Fonts) */
+    font-family: 'Roboto', sans-serif; 
+    
+    /* Aplicação de cor de fundo */
+    background-color: var(--cor-fundo); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 2. Seletor de Classe e Estilos Básicos (Card) */
+.card {
+    background-color: white; /* Teste Rápido 1: Card branco */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* 3. Tipografia - Título */
+h1 {
+    color: var(--cor-secundaria);
+    font-size: 1.8em; /* Tamanho da Fonte */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 4. Estilizando Campos */
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+/* 5. Seletor de Elemento e Estilizando Inputs Genéricos */
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px;
+    font-size: 1em; /* Tamanho da Fonte */
+}
+
+/* 6. Seletor de Atributo (para teste) */
+input[type="email"] {
+    border-left: 5px solid var(--cor-primaria);
+}
+
+/* 7. Seletor Combinador (Descendente) - Estiliza o link dentro de .info-extra */
+.info-extra a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 8. Botão - Cores, Borda e Texto */
+.botao-primario {
+    background-color: var(--cor-primaria); /* Teste Rápido 1: Botão azul */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Transição para o :hover */
+}
+
+/* 9. Desafio Opcional: Aplicação de :hover em Botão */
+.botao-primario:hover {
+    background-color: #0056b3; /* Tom de azul mais escuro ao passar o mouse */
+}
+
+/* 10. Desafio Opcional: Seletor de pseudo-classe :hover em input */
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+input[type="password"]:hover {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra suave com transparência */
+}
+
+/* 11. Desafio Opcional: .sucesso (Alerta verde) */
+.sucesso {
+    background-color: var(--cor-sucesso);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 12. Desafio Opcional: HSL em .destaque */
+.destaque {
+    /* Cor HSL pura, diferente da variável */
+    color: hsl(30, 100%, 50%); /* Laranja Vibrante (HSL) */
+    font-weight: bold;
+}

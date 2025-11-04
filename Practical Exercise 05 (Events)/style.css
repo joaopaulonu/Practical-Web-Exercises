@@ -1,0 +1,101 @@
+body { 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    background-color: #f4f4f4; 
+}
+main { 
+    max-width: 600px; 
+    margin: 0 auto; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+fieldset { 
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border-radius: 4px; 
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+select { 
+    width: 100%; 
+    padding: 10px; 
+    margin: 5px 0 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    transition: border-color 0.3s;
+}
+
+/* Estilos do Botão */
+button { 
+    padding: 10px 15px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    width: 100%;
+    transition: background-color 0.3s;
+}
+/* Estilo para botão desabilitado (JS adiciona o atributo 'disabled') */
+button:disabled { 
+    background-color: #ccc; 
+    cursor: not-allowed; 
+}
+
+/* CLASSES DE FEEDBACK (CONTROLADAS PELO JS) */
+.input-erro { 
+    border-color: #dc3545 !important; /* Vermelho para erro */
+} 
+.input-foco { 
+    border-color: #0056b3 !important; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Azul para foco */
+} 
+.feedback { 
+    font-size: 0.8em; 
+    margin-top: -5px; 
+    margin-bottom: 10px; 
+    color: #dc3545; /* Cor padrão para mensagens de erro */
+}
+.mensagem-sucesso { 
+    color: #28a745; 
+    font-weight: bold; 
+    text-align: center;
+}
+.mensagem-erro { 
+    color: #dc3545; 
+    font-weight: bold; 
+    border: 1px solid #dc3545; 
+    background-color: #f8d7da;
+    padding: 10px; 
+    border-radius: 4px; 
+    margin-bottom: 20px;
+}
+
+/* Estilos do Indicador de Força de Senha */
+.indicador-forca { 
+    margin-top: 5px; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.forca-texto { 
+    font-size: 0.9em; 
+    font-weight: bold; 
+    min-width: 50px; /* Para manter o layout estável */
+}
+#forca-barra { 
+    height: 5px; 
+    border-radius: 2px; 
+    width: 0%; 
+    flex-grow: 1;
+    transition: width 0.3s, background-color 0.3s; 
+}

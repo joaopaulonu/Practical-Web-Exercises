@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Interativo com Eventos JS</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <main>
+        <h1>Formulário de Cadastro Interativo</h1>
+        
+        <div id="sumario-erros" class="mensagem-erro" role="alert" style="display: none;">
+            <h2>Por favor, corrija os seguintes erros:</h2>
+            <ul id="lista-erros"></ul>
+        </div>
+
+        <form id="cadastro-form" aria-live="polite">
+            
+            <fieldset>
+                <legend>Etapa 1: Contador</legend>
+                <label for="nome">Nome Completo (Máx. 50 caracteres):</label>
+                <input type="text" id="nome" name="nome" data-min-length="3" required aria-describedby="nome-feedback nome-espelho">
+                <p id="nome-feedback" class="feedback"></p>
+                <p>Espelho: <span id="nome-espelho"></span></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Etapa 2: Select Dependente</legend>
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="">Selecione um Estado</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade" disabled>
+                    <option value="">Selecione a Cidade</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Etapa 3: Foco e Validação</legend>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required aria-describedby="email-feedback">
+                <p id="email-feedback" class="feedback"></p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Etapa 4/Desafio: Campos de Validação</legend>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required aria-describedby="forca-texto senha-feedback">
+                <div id="forca-senha" class="indicador-forca">
+                    <span id="forca-texto" class="forca-texto">Fraca</span>
+                    <div id="forca-barra"></div>
+                </div>
+                <p id="senha-feedback" class="feedback"></p>
+
+
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso" required aria-describedby="curso-feedback">
+                    <option value="">Selecione um Curso</option>
+                    <option value="web">Desenvolvimento Web</option>
+                    <option value="dados">Ciência de Dados</option>
+                    <option value="rede">Redes</option>
+                </select>
+                <p id="curso-feedback" class="feedback"></p>
+
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Aceito os termos e condições.</label>
+            </fieldset>
+
+            <button type="submit" id="btn-enviar" disabled>Enviar Cadastro</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

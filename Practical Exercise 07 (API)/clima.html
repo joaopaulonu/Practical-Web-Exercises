@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Climática - CyberWeather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <nav class="cyber-nav">
+        <div class="nav-brand">
+            <span class="glitch" data-text="CYBERWEATHER">CYBERWEATHER</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">HOME</a></li>
+            <li><a href="clima.html" class="nav-link active">CONSULTA CLIMA</a></li>
+            <li><a href="cidades.html" class="nav-link">CIDADES</a></li>
+            <li><a href="sobre.html" class="nav-link">SOBRE</a></li>
+            <li><a href="contato.html" class="nav-link">CONTATO</a></li>
+        </ul>
+        <div class="nav-hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>CONSULTA CLIMÁTICA</h1>
+            <p>Dados meteorológicos em tempo real de qualquer cidade</p>
+        </div>
+
+        <!-- Sistema de Consulta (mesmo código anterior adaptado) -->
+        <div class="cyber-terminal">
+            <div class="terminal-header">
+                <div class="window-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+                <span class="title">CLIMA_SYSTEM.exe</span>
+            </div>
+            
+            <div class="terminal-body">
+                <div class="input-group">
+                    <input type="text" id="cidadeInput" placeholder="DIGITE O NOME DA CIDADE..." class="cyber-input">
+                    <div class="button-group">
+                        <button id="buscarBtn" class="cyber-button primary">
+                            <span>BUSCAR CLIMA</span>
+                        </button>
+                        <button id="limparBtn" class="cyber-button secondary">
+                            <span>LIMPAR</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="resultado" class="result-container">
+                    <div class="scan-line"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>

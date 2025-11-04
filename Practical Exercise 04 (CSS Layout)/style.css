@@ -1,0 +1,199 @@
+/* ===================================== */
+/* 0. BOAS PRÁTICAS: TOKENS DE COR, RESET */
+/* ===================================== */
+:root {
+    /* Tokens de Cor */
+    --cor-primaria: #007bff; /* Azul */
+    --cor-secundaria: #6c757d; /* Cinza */
+    --cor-fundo: #f8f9fa; /* Cinza Claro */
+    --cor-texto: #343a40; /* Cinza Escuro */
+    --cor-destaque: #28a745; /* Verde */
+    --borda-radius: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+/* Acessibilidade: Foco Visível */
+a:focus, button:focus, input:focus {
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 2px;
+}
+
+/* Imagens Fluidas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===================================== */
+/* 1. NAVBAR (FLEXBOX) - MOBILE (EMPILHADO) */
+/* ===================================== */
+.navbar {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column; /* MOBILE: Itens empilhados */
+    gap: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; /* MOBILE: Menu empilhado */
+    gap: 5px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+/* ===================================== */
+/* 2. DASHBOARD (GRID) - MOBILE (1 COLUNA) */
+/* ===================================== */
+.dashboard-grid {
+    display: grid;
+    /* 3. Grid com Áreas Nomeadas - MOBILE-FIRST */
+    grid-template-areas: 
+        "sidebar"
+        "content"
+        "footer";
+    padding: 15px;
+    gap: 20px;
+}
+
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+.footer { grid-area: footer; }
+
+/* Estilização básica das áreas */
+.sidebar, .content, .footer {
+    padding: 15px;
+    background-color: white;
+    border-radius: var(--borda-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ===================================== */
+/* 2.1 KPI CONTAINER (MOBILE: 1 COLUNA) */
+/* ===================================== */
+.kpi-container {
+    display: grid;
+    grid-template-columns: 1fr; /* MOBILE: Apenas 1 coluna */
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.kpi-card {
+    padding: 15px;
+    border-left: 5px solid var(--cor-primaria);
+    background-color: var(--cor-fundo);
+    border-radius: var(--borda-radius);
+}
+
+/* ===================================== */
+/* 3. CARDS FLUIDOS (GRID) - MOBILE (1 COLUNA) */
+/* ===================================== */
+.cards-fluidos {
+    display: grid;
+    grid-template-columns: 1fr; /* MOBILE: Apenas 1 coluna */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--borda-radius);
+}
+
+/* ===================================== */
+/* 4. TABELA ROLÁVEL (WRAPPER) */
+/* ===================================== */
+.tabela-wrap {
+    /* Permite rolagem horizontal para o conteúdo */
+    overflow-x: auto; 
+    border: 1px solid #ddd;
+    border-radius: var(--borda-radius);
+}
+
+.tabela-wrap table {
+    width: 100%; /* Largura total */
+    border-collapse: collapse;
+    min-width: 500px; /* Garante que a tabela é mais larga que o mobile, forçando a rolagem */
+}
+
+table th, table td {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: left;
+}
+
+table thead th {
+    background-color: #e9ecef;
+}
+
+/* ===================================== */
+/* 5. RESPONSIVIDADE: BREAKPOINT >= 960px */
+/* ===================================== */
+@media (min-width: 960px) {
+    
+    /* 1. NAVBAR (FLEXBOX) - DESKTOP (LADO A LADO) */
+    .navbar {
+        flex-direction: row; /* DESKTOP: Lado a lado */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: row; /* DESKTOP: Menu lado a lado */
+        gap: 20px;
+    }
+
+    .menu a {
+        border-bottom: none;
+    }
+
+    /* 2. DASHBOARD (GRID) - DESKTOP (ÁREAS AVANÇADAS) */
+    .dashboard-grid {
+        grid-template-columns: 200px 1fr; /* Sidebar fixa (200px) e Conteúdo fluido */
+        /* Sidebar à esquerda, Conteúdo à direita, Footer cobrindo tudo */
+        grid-template-areas: 
+            "sidebar content"
+            "sidebar footer";
+        height: calc(100vh - 54px); /* Ajuste de altura para telas maiores */
+        overflow: hidden; /* Evita scroll desnecessário no body */
+    }
+
+    .content {
+        overflow-y: auto; /* Permite scroll apenas na área de conteúdo */
+    }
+    
+    /* 2.1 KPI CONTAINER - DESKTOP (3 COLUNAS) */
+    .kpi-container {
+        grid-template-columns: repeat(3, 1fr); /* DESKTOP: 3 colunas iguais */
+    }
+
+    /* 3. CARDS FLUIDOS (GRID auto-fit) - DESKTOP */
+    .cards-fluidos {
+        /* Permite que o número de colunas se ajuste automaticamente. */
+        /* Requisito: Grid auto-fit + minmax(220px, 1fr) */
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    }
+}

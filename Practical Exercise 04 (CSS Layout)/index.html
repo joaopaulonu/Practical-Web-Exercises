@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Responsivo | Flexbox & Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Dashboard Pro</div>
+        <nav class="menu">
+            <a href="#kpis">Visão Geral</a>
+            <a href="#cards">Relatórios</a>
+            <a href="#tabela">Dados</a>
+            <a href="#">Configurações</a>
+        </nav>
+    </header>
+
+    <div class="dashboard-grid">
+        
+        <aside class="sidebar">
+            <h2>Navegação</h2>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Usuários</a></li>
+                <li><a href="#">Análise</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            
+            <h1 id="kpis">Métricas Chave de Performance (KPIs)</h1>
+            
+            <section class="kpi-container">
+                <div class="kpi-card"><h3>Vendas</h3><p>R$ 15.230,00</p></div>
+                <div class="kpi-card"><h3>Clientes</h3><p>+ 45 Novos</p></div>
+                <div class="kpi-card"><h3>Taxa Conversão</h3><p>3.2%</p></div>
+            </section>
+
+            <h1 id="cards">Relatórios Detalhados</h1>
+            
+            <section class="cards-fluidos">
+                <div class="card"><h4>Card #1</h4><p>Resumo de performance da semana.</p></div>
+                <div class="card"><h4>Card #2</h4><p>Análise de tráfego do último mês.</p></div>
+                <div class="card"><h4>Card #3</h4><p>Projeção de crescimento anual.</p></div>
+                <div class="card"><h4>Card #4</h4><p>Inventário de produtos.</p></div>
+                </section>
+
+            <h1 id="tabela">Dados Brutos</h1>
+            
+            <section class="tabela-wrap">
+                <table>
+                    <caption>Dados de Acesso (Últimos 7 dias) - Role para ver mais</caption>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Visitas</th>
+                            <th>Cliques</th>
+                            <th>Impressões</th>
+                            <th>Taxa Rejeição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>28/Set</td><td>1250</td><td>150</td><td>5000</td><td>45%</td></tr>
+                        <tr><td>29/Set</td><td>1320</td><td>165</td><td>5500</td><td>42%</td></tr>
+                        <tr><td>30/Set</td><td>1180</td><td>140</td><td>4800</td><td>50%</td></tr>
+                        <tr><td>01/Out</td><td>1400</td><td>180</td><td>6000</td><td>40%</td></tr>
+                        <tr><td>02/Out</td><td>1550</td><td>200</td><td>6500</td><td>38%</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Dashboard Pro. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
