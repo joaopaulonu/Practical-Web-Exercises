@@ -1,42 +1,47 @@
-# 🤖 Practical Exercise 01: AI — Technological Revolution and the Digital Future
+# 💻 Desenvolvimento Web Computacional - Engenharia de Computação
 
-## 📄 Overview
+## 🎓 Contexto do Repositório
 
-This repository presents the solution for **Practical Exercise 01** from the **Computational Web Development** course, focused on creating the homepage (`index.html`) of a fictional blog themed around **Artificial Intelligence (AI)**.
+Este repositório serve como portfólio e arquivo de todos os **Exercícios Práticos (Practical Exercises)** desenvolvidos para a disciplina de **Desenvolvimento Web Computacional**, parte do curso de **Engenharia de Computação** na Pontifícia Universidade Católica de Campinas (**PUC-Campinas**).
 
-The main objective was to apply and demonstrate proficiency in **HTML5 standards**, **SEO best practices**, **semantic structure**, and **basic accessibility**, building a robust content layout ready for search engine indexing.
+Os projetos demonstram a evolução no domínio das tecnologias **Frontend** e **Backend** essenciais para a construção de sistemas web modernos.
 
-## ✨ Implementation Highlights and Best Practices
+## 🚀 Estrutura dos Exercícios
 
-| Element | Project Implementation | Demonstrated Value |
+Abaixo está a lista completa dos exercícios, organizada de forma cronológica, com foco nos principais conceitos abordados em cada pasta:
+
+| Pasta | Tópico Principal | Habilidades Demonstradas |
 | :--- | :--- | :--- |
-| **Title (`<title>`)** | `AI: Technological Revolution and the Digital Future | Blog Tech` | **Clarity & SEO:** Unique, keyword-focused title. |
-| **Meta Description** | *Content: Explore the world of Artificial Intelligence...* | **Optimization:** Concise summary for search snippets. |
-| **Main Heading** | Single `<h1>`: *The Future Is Now...* | **Semantics:** Defines the central theme for users and crawlers. |
-| **Content Structure** | Sections with `<h2>` (What Is AI, Applications...) | **Organization:** Logical and hierarchical text layout. |
-| **Semantic Emphasis** | Use of `<strong>` and `<em>` | **Accessibility/SEO:** Differentiates importance (`strong`) from emphasis (`em`). |
-| **Quotation** | `<blockquote>` (quote from Marc Andreessen) | **Structure:** Proper separation of cited content. |
-| **Image** | `alt="Illustration of a human head with neural connections..."` | **Accessibility:** Description for screen readers and SEO. |
+| **01 (HTML + SEO)** | Estrutura HTML5 e Semântica | Uso correto de tags, hierarquia (`h1`, `h2`), SEO (`title`, `meta description`, `alt`). |
+| **02 (List + Table)** | Organização de Dados em HTML | Criação e manipulação de listas (`<ul>`, `<ol>`) e tabelas estruturadas (`<table>`). |
+| **03 (Introduction to CSS)** | Estilização Básica (CSS) | Seletores, propriedades de cor e texto, aplicação de estilos *inline*, *internal* e *external*. |
+| **04 (CSS Layout)** | Posicionamento e Layout Responsivo | Técnicas de layout como Flexbox e/ou Grid, Model Box (margin, padding, border). |
+| **05 (Events)** | Interação com JavaScript | Manipulação do DOM (Document Object Model) e tratamento de eventos (`click`, `submit`, etc.). |
+| **06 (JWT)** | Autenticação e Segurança (Backend) | Implementação e validação de **JSON Web Tokens** para controle de acesso em APIs. |
+| **07 (API)** | Consumo e Criação de APIs | Desenvolvimento de endpoints RESTful e/ou consumo de serviços externos. |
 
-## 🛠️ Technologies and Tools
+## 🛠️ Tecnologias Chave
 
-| Category | Detail |
-| :--- | :--- |
-| **Main Language** | HTML5 (Structure and Semantics) |
-| **Focus** | On-Page SEO (Title, Meta Description, H1) and Accessibility |
-| **Content Theme** | Artificial Intelligence (AI) |
+O conjunto de exercícios cobre as seguintes tecnologias e conceitos:
 
-## 🎓 Course and Assignment Info
+* **Frontend:** HTML5, CSS3, JavaScript, DOM.
+* **Backend & Segurança:** JWT (JSON Web Tokens), Conceitos de API REST.
+* **Desenvolvimento:** Estruturação de código, Boas Práticas de SEO.
 
-| Detail | Value |
-| :--- | :--- |
-| **Program** | Computer Engineering |
-| **Institution** | Pontifical Catholic University of Campinas (PUC-Campinas) |
-| **Course** | Computational Web Development |
-| **Assignment** | Practical Exercise 01 – HTML + SEO |
-| **Objective** | Create a simple homepage in HTML5 following best practices in structure, semantics, and SEO. |
+## 🔗 Navegação Rápida
 
-## 🚀 How to View
+Para explorar qualquer exercício, basta clicar no nome da pasta correspondente:
 
-1. Clone this repository to your local machine.
-2. Open the `index.html` file directly in your browser.
+* [**Practical Exercise 01 (HTML + SEO)**](./Practical%20Exercise%2001%20(HTML%20+%20SEO))
+* [**Practical Exercise 02 (List + Table)**](./Practical%20Exercise%2002%20(List%20+%20Table))
+* [**Practical Exercise 03 (Introduction to CSS)**](./Practical%20Exercise%2003%20(Introduction%20to%20CSS))
+* [**Practical Exercise 04 (CSS Layout)**](./Practical%20Exercise%2004%20(CSS%20Layout))
+* [**Practical Exercise 05 (Events)**](./Practical%20Exercise%2005%20(Events))
+* [**Practical Exercise 06 (JWT)**](./Practical%20Exercise%2006%20(JWT))
+* [**Practical Exercise 07 (API)**](./Practical%20Exercise%2007%20(API))
+
+---
+## 👨‍💻 Autor
+
+[Seu Nome Aqui]
+[Seu Link do LinkedIn ou Portfólio]
