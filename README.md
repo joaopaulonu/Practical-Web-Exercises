@@ -1,36 +1,36 @@
-# 💻 Desenvolvimento Web Computacional - Engenharia de Computação
+# 💻 Computational Web Development – Computer Engineering
 
-## 🎓 Contexto do Repositório
+## 🎓 Repository Context
 
-Este repositório serve como portfólio e arquivo de todos os **Exercícios Práticos (Practical Exercises)** desenvolvidos para a disciplina de **Desenvolvimento Web Computacional**, parte do curso de **Engenharia de Computação** na Pontifícia Universidade Católica de Campinas (**PUC-Campinas**).
+This repository serves as a portfolio and archive of all **Practical Exercises** developed for the **Computational Web Development** course, part of the **Computer Engineering** program at the Pontifical Catholic University of Campinas (**PUC-Campinas**).
 
-Os projetos demonstram a evolução no domínio das tecnologias **Frontend** e **Backend** essenciais para a construção de sistemas web modernos.
+The projects showcase progressive mastery of essential **Frontend** and **Backend** technologies for building modern web systems.
 
-## 🚀 Estrutura dos Exercícios
+## 🚀 Exercise Structure
 
-Abaixo está a lista completa dos exercícios, organizada de forma cronológica, com foco nos principais conceitos abordados em cada pasta:
+Below is the complete list of exercises, organized chronologically, highlighting the key concepts covered in each folder:
 
-| Pasta | Tópico Principal | Habilidades Demonstradas |
+| Folder | Main Topic | Skills Demonstrated |
 | :--- | :--- | :--- |
-| **01 (HTML + SEO)** | Estrutura HTML5 e Semântica | Uso correto de tags, hierarquia (`h1`, `h2`), SEO (`title`, `meta description`, `alt`). |
-| **02 (List + Table)** | Organização de Dados em HTML | Criação e manipulação de listas (`<ul>`, `<ol>`) e tabelas estruturadas (`<table>`). |
-| **03 (Introduction to CSS)** | Estilização Básica (CSS) | Seletores, propriedades de cor e texto, aplicação de estilos *inline*, *internal* e *external*. |
-| **04 (CSS Layout)** | Posicionamento e Layout Responsivo | Técnicas de layout como Flexbox e/ou Grid, Model Box (margin, padding, border). |
-| **05 (Events)** | Interação com JavaScript | Manipulação do DOM (Document Object Model) e tratamento de eventos (`click`, `submit`, etc.). |
-| **06 (JWT)** | Autenticação e Segurança (Backend) | Implementação e validação de **JSON Web Tokens** para controle de acesso em APIs. |
-| **07 (API)** | Consumo e Criação de APIs | Desenvolvimento de endpoints RESTful e/ou consumo de serviços externos. |
+| **01 (HTML + SEO)** | HTML5 Structure and Semantics | Proper use of tags, heading hierarchy (`h1`, `h2`), SEO (`title`, `meta description`, `alt`). |
+| **02 (List + Table)** | Data Organization in HTML | Creation and manipulation of lists (`<ul>`, `<ol>`) and structured tables (`<table>`). |
+| **03 (Introduction to CSS)** | Basic Styling (CSS) | Selectors, color and text properties, use of *inline*, *internal*, and *external* styles. |
+| **04 (CSS Layout)** | Responsive Layout and Positioning | Layout techniques such as Flexbox and/or Grid, Box Model (margin, padding, border). |
+| **05 (Events)** | JavaScript Interaction | DOM manipulation and event handling (`click`, `submit`, etc.). |
+| **06 (JWT)** | Authentication and Security (Backend) | Implementation and validation of **JSON Web Tokens** for API access control. |
+| **07 (API)** | API Consumption and Creation | Development of RESTful endpoints and/or integration with external services. |
 
-## 🛠️ Tecnologias Chave
+## 🛠️ Key Technologies
 
-O conjunto de exercícios cobre as seguintes tecnologias e conceitos:
+The set of exercises covers the following technologies and concepts:
 
 * **Frontend:** HTML5, CSS3, JavaScript, DOM.
-* **Backend & Segurança:** JWT (JSON Web Tokens), Conceitos de API REST.
-* **Desenvolvimento:** Estruturação de código, Boas Práticas de SEO.
+* **Backend & Security:** JWT (JSON Web Tokens), REST API concepts.
+* **Development:** Code structuring, SEO best practices.
 
-## 🔗 Navegação Rápida
+## 🔗 Quick Navigation
 
-Para explorar qualquer exercício, basta clicar no nome da pasta correspondente:
+To explore any exercise, simply click on the corresponding folder name:
 
 * [**Practical Exercise 01 (HTML + SEO)**](./Practical%20Exercise%2001%20(HTML%20+%20SEO))
 * [**Practical Exercise 02 (List + Table)**](./Practical%20Exercise%2002%20(List%20+%20Table))
