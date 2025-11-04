@@ -41,7 +41,4 @@ Para explorar qualquer exercício, basta clicar no nome da pasta correspondente:
 * [**Practical Exercise 07 (API)**](./Practical%20Exercise%2007%20(API))
 
 ---
-## 👨‍💻 Autor
 
-[Seu Nome Aqui]
-[Seu Link do LinkedIn ou Portfólio]
