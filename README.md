@@ -1,10 +1,19 @@
 # 💻 Computational Web Development – Computer Engineering
 
+![Language](https://img.shields.io/badge/Language-HTML5%20%7C%20CSS3%20%7C%20JavaScript-blue)
+![Platform](https://img.shields.io/badge/Platform-Web-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
+---
+
 ## 🎓 Repository Context
 
 This repository serves as a portfolio and archive of all **Practical Exercises** developed for the **Computational Web Development** course, part of the **Computer Engineering** program at the Pontifical Catholic University of Campinas (**PUC-Campinas**).
 
 The projects showcase progressive mastery of essential **Frontend** and **Backend** technologies for building modern web systems.
+
+---
 
 ## 🚀 Exercise Structure
 
@@ -20,29 +29,49 @@ Below is the complete list of exercises, organized chronologically, highlighting
 | **06 (JWT)** | Authentication and Security (Backend) | Implementation and validation of **JSON Web Tokens** for API access control. |
 | **07 (API)** | API Consumption and Creation | Development of RESTful endpoints and/or integration with external services. |
 
+---
+
 ## 🛠️ Key Technologies
 
 The set of exercises covers the following technologies and concepts:
 
-* **Frontend:** HTML5, CSS3, JavaScript, DOM.
-* **Backend & Security:** JWT (JSON Web Tokens), REST API concepts.
-* **Development:** Code structuring, SEO best practices.
+- **Frontend:** HTML5, CSS3, JavaScript, DOM  
+- **Backend & Security:** JWT (JSON Web Tokens), REST API concepts  
+- **Development:** Code structuring, SEO best practices  
+
+---
 
 ## 🔗 Quick Navigation
 
 To explore any exercise, simply click on the corresponding folder name:
 
-* [**Practical Exercise 01 (HTML + SEO)**](./Practical%20Exercise%2001%20(HTML%20+%20SEO))
-* [**Practical Exercise 02 (List + Table)**](./Practical%20Exercise%2002%20(List%20+%20Table))
-* [**Practical Exercise 03 (Introduction to CSS)**](./Practical%20Exercise%2003%20(Introduction%20to%20CSS))
-* [**Practical Exercise 04 (CSS Layout)**](./Practical%20Exercise%2004%20(CSS%20Layout))
-* [**Practical Exercise 05 (Events)**](./Practical%20Exercise%2005%20(Events))
-* [**Practical Exercise 06 (JWT)**](./Practical%20Exercise%2006%20(JWT))
-* [**Practical Exercise 07 (API)**](./Practical%20Exercise%2007%20(API))
+- [**Practical Exercise 01 (HTML + SEO)**](./Practical%20Exercise%2001%20(HTML%20+%20SEO))  
+- [**Practical Exercise 02 (List + Table)**](./Practical%20Exercise%2002%20(List%20+%20Table))  
+- [**Practical Exercise 03 (Introduction to CSS)**](./Practical%20Exercise%2003%20(Introduction%20to%20CSS))  
+- [**Practical Exercise 04 (CSS Layout)**](./Practical%20Exercise%2004%20(CSS%20Layout))  
+- [**Practical Exercise 05 (Events)**](./Practical%20Exercise%2005%20(Events))  
+- [**Practical Exercise 06 (JWT)**](./Practical%20Exercise%2006%20(JWT))  
+- [**Practical Exercise 07 (API)**](./Practical%20Exercise%2007%20(API))  
 
 ---
-### 📬 Contact Me
 
+## 🗺️ Roadmap
+
+- [x] HTML Fundamentals (SEO, Lists, Tables)  
+- [x] CSS Basics and Layouts  
+- [x] JavaScript Events and DOM Manipulation  
+- [ ] Backend Authentication with JWT  
+- [ ] REST API Development and Integration  
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the file [LICENSE](LICENSE) for details.
+
+---
+
+## 📬 Contact Me
 <div align="center"> 
   <a href="https://www.linkedin.com/in/nunes-andrade" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://instagram.com/jp_nunes.andrade" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
